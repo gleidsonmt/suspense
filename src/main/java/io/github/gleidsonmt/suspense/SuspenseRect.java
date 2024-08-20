@@ -40,6 +40,7 @@ public class SuspenseRect extends HBox implements Loader{
 
         VBox infoContainer = new VBox(title, legend);
         infoContainer.setPrefWidth(150);
+        infoContainer.minWidthProperty().bind(infoContainer.prefWidthProperty());
 
         container.setAlignment(Pos.CENTER);
         this.getChildren().addAll(rectContainer, infoContainer);

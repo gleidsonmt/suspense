@@ -19,7 +19,7 @@ public class HelloApplication extends Application {
 
         SuspenseRect suspenseRect = new SuspenseRect();
 
-        FlowPane flowPane = new FlowPane(suspenseCircle, suspenseTechCircle, suspense3DCircle, suspenseRect);
+        FlowPane flowPane = new FlowPane(suspenseCircle, suspenseTechCircle, suspense3DCircle);
 //        FlowPane flowPane = new FlowPane( suspenseRect);
         flowPane.setHgap(20);
         flowPane.setAlignment(Pos.CENTER);
