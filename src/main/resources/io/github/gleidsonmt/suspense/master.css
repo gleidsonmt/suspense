@@ -1,0 +1,5 @@
+.root {
+    -fx-color: blue;
+    -dark-gray: gray;
+    -light-gray: derive(gray, 50%);
+}
