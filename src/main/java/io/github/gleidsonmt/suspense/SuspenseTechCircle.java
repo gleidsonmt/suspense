@@ -4,6 +4,7 @@ import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.RotateTransition;
 import javafx.animation.Timeline;
+import javafx.beans.property.StringProperty;
 import javafx.beans.value.ObservableValue;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
@@ -97,12 +98,22 @@ public class SuspenseTechCircle extends StackPane implements Loader {
     }
 
     @Override
-    public void updateTitle(String _title) {
-        title.setText(_title);
+    public StringProperty titleProperty() {
+        return this.title.textProperty();
     }
 
     @Override
-    public void updateLegend(String _legend) {
-        legend.setText(_legend);
+    public StringProperty legendProperty() {
+        return this.legend.textProperty();
+    }
+
+    @Override
+    public void setTitle(String _title) {
+        this.title.setText(_title);
+    }
+
+    @Override
+    public void setLegend(String _legend) {
+        this.legend.setText(_legend);
     }
 }

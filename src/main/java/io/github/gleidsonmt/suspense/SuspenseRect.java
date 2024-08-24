@@ -1,6 +1,7 @@
 package io.github.gleidsonmt.suspense;
 
 import javafx.animation.*;
+import javafx.beans.property.StringProperty;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
@@ -111,14 +112,24 @@ public class SuspenseRect extends HBox implements Loader{
         rotate.play();
     }
 
+
     @Override
-    public void updateTitle(String title) {
-        this.title.setText(title);
+    public StringProperty titleProperty() {
+        return this.title.textProperty();
     }
 
     @Override
-    public void updateLegend(String legend) {
-        this.legend.setText(legend);
+    public StringProperty legendProperty() {
+        return this.legend.textProperty();
     }
 
+    @Override
+    public void setTitle(String _title) {
+        this.title.setText(_title);
+    }
+
+    @Override
+    public void setLegend(String _legend) {
+        this.legend.setText(_legend);
+    }
 }
