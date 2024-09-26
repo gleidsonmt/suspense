@@ -3,3 +3,23 @@
     -dark-gray: gray;
     -light-gray: derive(gray, 50%);
 }
+.DCircle > .container-circle > .track-circle,
+.tech-circle > .container-circle > .track-circle,
+.suspense-circle > .container-circle > .track-circle  {
+    -fx-stroke: -fx-color;
+}
+
+.suspense-circle > .container-circle > .foreground-circle  {
+    -fx-stroke: rgba(0,0,0,.2);
+}
+
+.tech-circle > .container-circle > .title,
+.suspense-circle > .container-circle > .title  {
+    -fx-font-size: 20pt;
+}
+
+.tech-circle >  .legend,
+.suspense-circle >  .legend  {
+    -fx-font-size: 14pt;
+}
+

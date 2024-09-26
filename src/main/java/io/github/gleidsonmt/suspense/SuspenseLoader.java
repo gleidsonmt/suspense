@@ -4,9 +4,9 @@ import javafx.beans.property.StringProperty;
 
 /**
  * @author Gleidson Neves da Silveira | gleidisonmt@gmail.com
- * Create on  15/08/2024
+ * Create on  13/09/2024
  */
-public interface Loader {
+public interface SuspenseLoader {
 
     StringProperty titleProperty();
 

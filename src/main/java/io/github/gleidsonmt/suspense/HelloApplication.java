@@ -13,11 +13,10 @@ public class HelloApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        SuspenseTechCircle suspenseTechCircle = new SuspenseTechCircle("TechCircle", "Circle");
+        TechCircle suspenseTechCircle = new TechCircle("TechCircle", "Circle");
         SuspenseCircle suspenseCircle = new SuspenseCircle("Circle", "Circle");
         Suspense3DCircle suspense3DCircle = new Suspense3DCircle("3DCircle", "Circle");
 
-        SuspenseRect suspenseRect = new SuspenseRect();
 
         FlowPane flowPane = new FlowPane(suspenseCircle, suspenseTechCircle, suspense3DCircle);
 //        FlowPane flowPane = new FlowPane( suspenseRect);
